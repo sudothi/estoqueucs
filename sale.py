@@ -1,6 +1,8 @@
 import tkinter as tk
 from PIL import Image, ImageTk, ImageDraw
 
+# Oque vai ser colocado aqui eh o codigo do produto, e quando clicar no botao finalizar ele vai remover a quantidade de itens do estoque, nao esta finalizado falta mudar algumas coisas
+
 class SaleCartApp:
     def __init__(self, root):
         self.root = root
