@@ -1,0 +1,12 @@
+Defletor de Ar,99.9,5
+Escapamento Esportivo,2000.0,5
+Tanques de agua,500.8,6
+Engate de reboque,1000.49,3
+Iluminaçao de teto,59.9,20
+Radio PX,249.9,1
+Aquecedor de cabine,159.9,4
+Placas decorativas,30.0,36
+Pingentes de espelho,14.9,87
+Monitor de ponto cego,869.9,2
+Produto Teste,500.0,68
+Produto Teste 2,10.0,100

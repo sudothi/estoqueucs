@@ -98,3 +98,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = LoadingToArchiveApp(root)
     root.mainloop()
+
+# Arquivo feito por Thiago Chemello. @sudothi on github.

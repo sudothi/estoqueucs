@@ -14,17 +14,22 @@ def main():
     listbox = tk.Listbox(frame, font=("Arial", 14), width=60, height=25)
     listbox.pack()
 
-    # Lê o arquivo CSV e preenche a lista
-    csv_path = 'inventory.csv'
-    if os.path.exists(csv_path):
-        with open(csv_path, newline='', encoding='utf-8') as csvfile:
-            reader = csv.reader(csvfile)
+    txt_path = 'estoque.txt'
+    if os.path.exists(txt_path):
+        with open(txt_path, newline='', encoding='latin1') as txtfile:
+            reader = csv.reader(txtfile)
             for row in reader:
-                listbox.insert(tk.END, ', '.join(row))
+                if len(row) == 3:
+                    nome, valor, quantidade = row
+                    listbox.insert(tk.END, f"Nome: {nome} | Valor: {valor} | Quantidade: {quantidade}")
+                else:
+                    listbox.insert(tk.END, ', '.join(row))
     else:
-        listbox.insert(tk.END, 'Arquivo inventory.csv não encontrado.')
+        listbox.insert(tk.END, 'Arquivo estoque.txt não encontrado.')
 
     root.mainloop()
 
 if __name__ == "__main__":
     main()
+
+# Arquivo feito por Thiago Chemello. @sudothi on github.
